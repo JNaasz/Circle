@@ -2,6 +2,8 @@ body {
   background: linear-gradient(to bottom right,#033e80, #018b07);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  overflow: hidden;
+  height: 700px;
   }
 
   @font-face {
@@ -47,6 +49,7 @@ label{
 
 #circle:hover {
   transform: rotate(1080deg) scale(.5);
+  cursor: grabbing;
 }
 
 #leaves {
@@ -55,7 +58,8 @@ label{
   background-attachment: fixed;
   background-position: bottom center;
   background-size: cover;
-  height: 600px;
+  height: 700px;
+  overflow: hidden;
   }
 
 #happy {
@@ -74,4 +78,9 @@ button {
     background-color: #1b62a4;
     color: #95f9bd;
     border: 2px solid #075928; /* Green */
+    cursor: pointer;
+}
+
+button:focus {
+  outline: none;
 }
